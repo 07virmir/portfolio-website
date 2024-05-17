@@ -40,7 +40,7 @@ const TAB_DATA = [
           {
             title: (
               <>
-                Bachelor's in Computer Science
+                Bachelor&apos;s in Computer Science
                 <br />
                 Georgia Institute of Technology
               </>
@@ -50,7 +50,7 @@ const TAB_DATA = [
           {
             title: (
               <>
-                Master's in Computer Science
+                Master&apos;s in Computer Science
                 <br />
                 Georgia Institute of Technology
               </>
@@ -124,8 +124,8 @@ const AboutSection = () => {
             real-world impact. My expertise lies in designing and implementing robust architectures that 
             drive efficient and high-performance systems. I have a solid foundation in machine learning and deep learning,
             and love the chance to integrate these solutions into my projects. Most of my experience is in Python,
-            but I'm also proficient in a multitude of other languages and technologies. As a quick learner and an enthusiastic 
-            team player, I'm always looking to expand my knowledge and skill set.
+            but I&apos;m also proficient in a multitude of other languages and technologies. As a quick learner and an enthusiastic 
+            team player, I&apos;m always looking to expand my knowledge and skill set.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
