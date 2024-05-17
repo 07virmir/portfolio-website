@@ -7,57 +7,51 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Automated Grocery Ordering",
+    description: "Collaborative automated grocery ordering app integrating Kroger and Splitwise APIs.",
+    image: "/images/projects/grocery.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/07virmir/grocery_automation",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Musicle",
+    description: "Daily musical guessing game leveraging Spotify's library, designed to challenge and expand your music knowledge.",
+    image: "/images/projects/musicle.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/07virmir/Musicle",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Soccer Position Prediction",
+    description: "Soccer play prediction tool using LSTM models and manim visualizations for sports analytics and training.",
+    image: "/images/projects/soccer.png",
+    tag: ["All", "Web", "ML"],
+    gitUrl: "https://github.com/07virmir/soccer-futures",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "What the Move",
+    description: "Social event planning app with map integration to improve party coordination and communication.",
+    image: "/images/projects/wtm.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/07virmir/wtm",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Stock Correlation Dashboard",
+    description: "Platform for visualizing correlations between stocks using financial metrics.",
+    image: "/images/projects/stock.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/07virmir/stock-correlation",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Artwork Classification through Low Information Learning",
+    description: "Classifying and measuring similarity between artworks using various Deep Learning architectures.",
+    image: "/images/projects/painting.png",
+    tag: ["All", "ML"],
+    gitUrl: "https://github.com/07virmir/PaintingClassification",
   },
 ];
 
@@ -100,6 +94,11 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="ML"
+          isSelected={tag === "ML"}
+        />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
@@ -116,7 +115,6 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
             />
           </motion.li>
         ))}
