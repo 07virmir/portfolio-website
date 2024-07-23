@@ -60,7 +60,7 @@ const EmailSection = () => {
           <Link href="https://github.com/07virmir">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/viren-m/">
+          <Link href="https://www.linkedin.com/in/viren-mirchandani/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
