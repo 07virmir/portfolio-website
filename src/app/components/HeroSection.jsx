@@ -44,7 +44,7 @@ const HeroSection = () => {
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              Let's Connect
             </Link>
             <a
               href="/Viren_Mirchandani_Resume.pdf" // Replace this with the actual path to your PDF file
