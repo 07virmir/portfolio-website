@@ -120,7 +120,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a backend and fullstack developer with a passion for creating innovative solutions that have
+            I am a backend and full stack developer with a passion for creating innovative solutions that have
             real-world impact. My expertise lies in designing and implementing robust architectures that 
             drive efficient and high-performance systems. I have a solid foundation in machine learning and deep learning,
             and love the chance to integrate these solutions into my projects. Most of my experience is in Python,
